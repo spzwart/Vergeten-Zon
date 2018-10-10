@@ -1,0 +1,184 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  My documentation report
+%  Objetive: Explain what I did and how, so someone can continue with the investigation
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
+
+\usepackage{xcolor} % Required for specifying colors by name
+\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+
+% Font Settings
+\usepackage{avant} % Use the Avantgarde font for headings
+%\usepackage{times} % Use the Times font for headings
+\usepackage{mathptmx} % Use the Adobe Times Roman as the default text font together with math symbols from the Sym­bol, Chancery and Com­puter Modern fonts
+
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[utf8]{inputenc} % Required for including letters with accents
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+
+% Bibliography
+\usepackage[style=alphabetic,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+\addbibresource{bibliography.bib} % BibTeX bibliography file
+\defbibheading{bibempty}{}
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1.25]{Sun.png}}} % Image background
+\centering
+\vspace*{5cm}
+\par\normalfont\fontsize{35}{35}\sffamily\selectfont
+\textbf{De vergeten Zon}\\
+{\LARGE Over de vragen die bleven hangen}\par % Book title
+\vspace*{1cm}
+{\Huge Martijn van Calmthout \\
+       Simon Portegies Zwart}\par % Author name
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+%\noindent Copyright \copyright\ 2014 Andrea Hidalgo\\ % Copyright notice
+
+\noindent \textsc{Summer Research Internship, University of Western Ontario}\\
+
+\noindent \textsc{github.com/LaurethTeX/Clustering}\\ % URL
+
+\noindent Dit boek is tot stand gekomen door een samenwerking tussen Martijn van Calmthout en Simon Portegies Zwart, geinitieerd door Liesbeth.\\ % License information
+
+\noindent \textit{Begonnen met schrijven in oktober 2018} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\chapterimage{solarsystem.png} % Table of contents heading image
+
+\pagestyle{empty} % No headers
+
+\tableofcontents % Print the table of contents itself
+
+%\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+
+\pagestyle{fancy} % Print headers again
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+
+\chapterimage{ejected_planet_940x500.png} % Chapter heading image
+
+\chapter{Introduction}
+
+\section{Openstaande vragen}\index{Vragen}
+
+\begin{remark}
+   
+\begin{itemize} 
+\item voor de zon er was, was er gas
+De vorming van de Zon en de gasdisk er omheen
+De geboorteomgeving van de Zon, in een sterrenhoop.
+De consequenties van geboren worden in een sterrenhoop:
+   -verrijking door sterrenwing
+   -supernova in de buurd (disk afkapping, en omduwen, roosteren van de schijf)
+De verdamping van de geboorte cluster, en waar die sterren nu rondhangen (brusjes v/d zon)
+Het ontstaan van de Oortwolk en de oorspong van de kometen
+De periode van het late-zware bombardement en de oorsprong van de maankraters (Nice model)
+De verdere evolutie van de zon, als een eenzame ster.
+De vorming van de planeten en manen
+Het overblijvende materiaal (de planetoiden)
+Mixing van het overblijvende materiaal (Overstag [grand-tack] model vs planeet embrio model)
+Het einde van het leven op aarde (door een meteoriet of komeetinslag).
+Het sterven van de zon (over ca. 5 miljar jaar)
+\end{itemize}
+
+\begin{itemize}
+Open staande en uitgesproken vragen:
+-Waar komt het waten op aarde (en Mars) vandaan?
+-Waarom heeft Jupiter zo veel manen, en wat is de rol van de Trojanen
+-Waarom ligt Uranus op zijn kant
+-Hoe komt Pluto aan zo veel manen
+-Wat is de oorsprong van de vreemde baan van Sedna
+-Hoe vaak botsen er asteroide of planetoiden op de aarde
+-Waarom is de zon veel rijker aan metalen dan omliggende sterren.
+-Hoe komt het dat het zonnestelsel zo'n 'af' planetenstelsel heeft.
+\end{itemize}
+\end{remark}
+
+\begin{quote}
+haha..
+\end{quote}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.37\textwidth]{TheSun.png}
+    \caption{leuk plaatje}
+    \label{fig:pca}
+\end{figure}
+
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER 3
+%----------------------------------------------------------------------------------------
+
+\chapterimage{solarsystem.png}
+\chapter{Hoofdstuk 2...}
+
+bladiebla...
+
+\section{sectie ... ?}
+
+
+\begin{table}[h!]
+  \centering
+    \begin{tabular}{ c c c c c c }
+    \hline\hline
+    
+    Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
+    \hline
+    
+    Train2 & 1 & 1 & 0.3 & 0.001 & 5\\
+    Train3 & 1 & 1 & 0.7 & 10 & 100\\
+    Train4 & 1 & 1 & 0.95 & 1 & 10\\
+    Train5 & 1 & 1 & 0.99 & 0.1 & 10\\
+    Train6 & 1 & 1 & 0.01 & 0.01 & 1\\
+    Train7 & 1 & 1 & 0.5 & 0.7 & 5\\
+    Train8 & 1 & 1 & 0.5 & 0.5 & 7\\
+    Train11 & 1 & 1 & 0.25 & 0.00001 & 10\\
+    
+    \hline
+  \end{tabular}
+  \caption{tabel voorbeeld..}
+  \label{tab:ds9failed}
+\end{table}
+
+\cite{book_key}
+
+%% \bibliographystyle{} % Style BST file
+\bibliography{bibliography}  
+\end{document}
